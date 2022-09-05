@@ -7,6 +7,56 @@
 }
 
 body{
-    background-image: none;
+    background-image:url(background.jpg);
     font-family: 'Poppins', sans-serif;
+    color: black;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    padding: 20px 70px;
+    columns: #fff;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date-container{
+    font-weight: 300;
+}
+.date-container .time{
+    font-size: 70px;
+    font-weight: 100;
+    
+}
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container.date{
+    font-size: 80px;
+}
+.place-container{
+    text-align: end;
+}
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 200;
+}
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+}
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
 }
