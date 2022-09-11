@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image:url(https:www.pexels.com/photo/white-clouds-2114014/);
+    background-image:url("/background.jpg");
     font-family: 'Poppins', sans-serif;
     color: white;
     overflow: hidden;
@@ -39,8 +39,8 @@ body{
     margin-left: 20px;
 }
 
-.date-container.date{
-    font-size: 80px;
+.date-container .date{
+    font-size: 30px;
 }
 .place-container{
     text-align: end;
@@ -50,7 +50,7 @@ body{
     font-weight: 200;
 }
 .place-container .country{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 700;
 }
 .current-info .others{
@@ -68,7 +68,7 @@ body{
 }
 
 .future-forecast{
-    background: rgba(24, 24, 27, 0.4);
+    background: rgba(24, 24, 27, 0.6);
     padding: 25px;
     position: fixed;
     bottom: 0;
@@ -85,9 +85,16 @@ body{
 }
 
 .future-forecast .today{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(24, 24, 27, 0.8);
+    
 }
 
 .future-forecast .today .day{
@@ -97,8 +104,8 @@ body{
     text-align: center;
 }
 
-.future-forecast .today .temp{
-    font-size: 20px;
+.future-forecast  .today .temp{
+    font-size: 18px;
     padding-top: 15px;
 }
 
@@ -111,7 +118,9 @@ body{
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 15px;
-}
+    background: rgba(0, 0, 0, 0.4);
+    }
+
 
 .weather-forecast .weather-forecast-item .day{
     padding: 5px 15px;
@@ -122,6 +131,7 @@ body{
 
 .weather-forecast .weather-forecast-item .temp{
     font-weight: 100;
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 730px) {
@@ -156,7 +166,7 @@ body{
     font-size: 14px;
    }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     .future-forecast {
         justify-content: start;
         align-items: none;
